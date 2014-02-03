@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+Plantilla Neutrona para Cyclope 3
+Esta plantilla fue desarrollada por Codigo Sur: www.codigosur.org
+Diseno conceptual + HTML + CSS: Santiago Hoerth Moura
+Codigo HTML realizado bajo licencia GPL (copialo, mejoralo, pasalo)
+Ver licencia en: http://creativecommons.org/licenses/GPL/2.0/deed.es_AR
+El codigo HTML y CSS es GPL. Gracias :)
+Si modificas no borres estas lineas :)
+ -->  
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+ 
+ <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>DeltaLibre.org.ar | Red Digital Comunitaria</title>
+    <meta name="Keywords" content="wireless, wifi, wi-fi, redes, freenetwork, network" />
+    <meta name="Description" content="Red digital comunitaria" />
+    <style>
+html{width: 100%; height: 100%; margin:0; padding:0;}
+body {background-color: #eed; margin:0; padding:0; height: 100%; color: #DDC; font-size: 9pt;font-family:arial;}
+.staticpage.detail{width: 100%; height: 100%;}
+#mascara{float:left;margin-left:auto;}
+/* * { margin: 0; padding: 0; }*/
+#page{display:table;overflow:hidden;margin:0px auto;}
+*:first-child+html #page {position:relative;}/*ie7*/
+* html #page{position:relative;}/*ie6*/
+
+#content_container{display:table-cell;vertical-align: middle;}
+*:first-child+html #content_container{position:absolute;top:50%;}/*ie7*/
+* html #content_container{position:absolute;top:50%;}/*ie6*/
+
+*:first-child+html #content{position:relative;top:-50%;}/*ie7*/
+* html #content{position:relative;top:-50%;}/*ie6*/
+
+#page{height:100%;width:100%;max-width:630px;}
+
+h1{text-align:center; font-size: 16pt;}
+a {color:white; text-decoration: underline;}
+#content{background-color: #2a2; padding: 20px; border-radius: 10px; border: 4px #dd3 dashed;}
+.entrar{float: right; padding: 5px; border: 2px outset #eed; border-radius: 5px; text-align:center; background-color:#fd2; box-shadow: 2px 2px 5px #444;color: black;}
+.entrar:hover{background-color:#fd4;}
+.entrar a, .entrar a:hover{color: black; text-decoration: none; font-weight: bold;}
+.entrar a:hover{text-decoration: underline;}
+ul { margin: 25px; padding: 0; }
+li {background-color: #181; list-style-type: none; padding: 10px; border-radius: 10px; text-align:justify}
+
+    </style>
+ </head>
+
+  <body class="">
+    <div id="page">
+      <div id="content_container">
+        <div id="content">
+	  
+	  <form method='GET' action='$authaction'>
+	    <input type='hidden' name='tok' value='$tok'>
+	    <input type='hidden' name='redir' value='$redir'>
+
+<div class="content-view staticpage detail staticpage-detail html-content">
+  <div class="text">
+    <h1>Bienvenida a DeltaLibre</h1>
+  	<h4>Una comunidad isle&ntilde;a mantiene la infraestructura de red, y paga mensualmente la conexi&oacute;n a Internet que est&aacute;s intentando usar.</h4>
+<!--  	<h4>Por otro lado, la Red Libre Comunitaria (local) es abierta y garantiza las siguientes libertades:</h4>
+	<ul>
+		<li>"Eres libre de utilizar la red para cualquier propósito mientras no perjudiques el funcionamiento de la propia red, la libertad de otros/as usuarios/as, y respetes las condiciones de los contenidos y servicios que circulan libremente"</li>
+		<li>"Eres libre de conocer como es la red, sus componentes y su funcionamiento, también puedes difundir su espíritu y funcionamiento libremente"</li>
+		<li>"Eres libre para incorporar servicios y contenidos a la red con las condiciones que quieras"</li>
+		<li>"Eres libre de incorporarte a la red y ayudar a extender estas libertades y condiciones"</li>
+	</ul>-->
+	<h4>Dentro de la Red Libre Comunitaria local (sin salir a Internet) se puede acceder libremente a:</h4>
+	<ul>
+		<li><a href="https://nube.deltalibre.org.ar/public.php?service=gallery&t=019493fe4950828eb796c09c96e6bb39">Galer&iacute;a de fotos de nodos</a></li>
+		<li><a href="https://nube.deltalibre.org.ar/">Servidor de archivos estilo DropBox</a> (user: delta / pass: libre)</li>
+	</ul>
+        <img src="$imagesdir/logo-deltalibre.png" style="float:right;z-index:0;" height=100>
+	<h4>Si tenes un c&oacute;digo de contribuci&oacute;n mensual, ponelo en la cajita de texto.<br/>
+	Si no, pod&eacute;s intentar colocar la palabra "gratis" (sin comillas).<br/>
+	Para obtener un c&oacute;digo, por el momento pod&eacute;s solicitarlo por mail a <a href="mailto:cuentas@deltalibre.org.ar">cuentas@deltalibre.org.ar</a></h4>
+    </div>
+</div>
+
+	  <span class="entrar"><input type='text' name='voucher' autocomplete='off' autocorrect='off' value='' size='12' maxlength='12'><input type='submit' value='OK'></span>
+	  </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
