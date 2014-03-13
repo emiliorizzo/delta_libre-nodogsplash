@@ -723,6 +723,12 @@ form.c1 *.inv ::-moz-selection {
 .acentro {
   text-align: center;
 }
+.ader {
+  text-align: right;
+}
+.aizq {
+  text-align: left;
+}
 .logo-circ-cont {
   padding: 1em;
   text-align: center;
@@ -747,6 +753,10 @@ form.c1 *.inv ::-moz-selection {
   -o-transform: rotate(-8deg);
   transform: rotate(-8deg);
 }
+#logo-cont,
+.logo-circ-cont {
+  z-index: 1000;
+}
 /*IDs*/
 #logo-splash {
   margin-top: -8em;
@@ -766,14 +776,4 @@ form.c1 *.inv ::-moz-selection {
   box-shadow: 1px 1px 10px 0px #808080;
   -o-box-shadow: 1px 1px 10px 0px #808080;
   -ms-box-shadow: 1px 1px 10px 0px #808080;
-}
-#bienvenida-hdr {
-  text-align: center;
-}
-#form-splash {
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
 }
