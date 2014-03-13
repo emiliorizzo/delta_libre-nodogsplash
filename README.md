@@ -2,7 +2,12 @@
 
 Cosas a tener en cuenta:
 
-*uso /images para todos los archivos porque no se si puedo crear (ej:) /css
+*uso /images para todos los archivos 
+http://wiki.openwrt.org/doc/howto/wireless.hotspot.nodogsplash
+	Note, to include an external *.css file, put it in the images directory, and include as so:
+	@import url("$imagesdir/stylesheet.css");
+
+ * (habrá que modificar el "import"??)
 
 Los repos originales de los .css son estos
 
