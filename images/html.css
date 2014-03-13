@@ -1,41 +1,6 @@
 /* ==========================================================================
  HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
  ========================================================================== */
-/*@c2b1:lighten(@c2,5%);
-@c2b2:lighten(@c2,10%);
-@c2b3:lighten(@c2,15%);
-@c2b4:lighten(@c2,18%);
-@c2b5:lighten(@c2,22%);
-@c2b6:lighten(@c2,25%);*/
-/*.colorCalc(@color,@pos,@Smax:0,@pasos: 9,@Bmax: 0){
-
-& when (@Bmax = 0){
-    @Bmax: lightness(@color);}    
-  
-  
-    @perc: colPerc(@Bmax,@pasos,@pos);
-    @col: lighten(@color,@perc);
-   & when  (@pos < 0) {@col: darken(@color,@perc);}
-    
-     & when (@Smax > 0) {
-      @perc: colPerc(@Smax,@pasos,@pos);
-      @col: desaturate(@col,@perc);
-    } 
-
-}
-
-.colPerc(@max,@pasos,@pos){
-  @int: @max/@pasos;
-  @pos: abs(@pos);
-  @pos: @pos+1;
-  @perc: @int*@pos;
-
-}
-
-.BM(@Bmax) when (@Bmax = 0){
-    @Bmax: lightness(@color); 
-}
-*/
 html,
 button,
 input,
