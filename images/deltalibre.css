@@ -374,6 +374,9 @@ button {
   border-radius: 0.5em;
   font-weight: bold;
 }
+input {
+  padding: 0 1em 0 1em;
+}
 input[type$="radio"] {
   color: red;
 }
@@ -420,22 +423,28 @@ legend:before {
 legend:after {
   content: " ]";
 }
+input.dest {
+  font-weight: bold;
+}
 :-moz-placeholder {
   color: #808080;
   font-size: 0.8em;
   font-style: italic;
+  font-weight: normal;
   padding-left: 1em;
 }
 :-ms-input-placeholder {
   color: #808080;
   font-size: 0.8em;
   font-style: italic;
+  font-weight: normal;
   padding-left: 1em;
 }
 ::-webkit-input-placeholder {
   color: #808080;
   font-size: 0.8em;
   font-style: italic;
+  font-weight: normal;
   padding-left: 1em;
 }
 /*FORMS - COLORS */
@@ -446,6 +455,9 @@ form.c2 *.inv {
  @cbname: prefijo de color
  * */
   background-color: #f5f9f9;
+  /*input.dest:focus{
+    font-weight: normal;
+}*/
 }
 form.c1 *,
 fieldset.c1 *,
@@ -537,28 +549,31 @@ fieldset.c1 fieldset.dest,
 form.c2 *.inv fieldset.dest {
   background-color: #f5f9f9;
 }
-form.c1:-moz-placeholder,
-fieldset.c1:-moz-placeholder,
-form.c2 *.inv:-moz-placeholder {
-  color: #f5f9f9;
+form.c1 input:-moz-placeholder,
+fieldset.c1 input:-moz-placeholder,
+form.c2 *.inv input:-moz-placeholder {
+  color: #508a8b;
   font-size: 0.8em;
   font-style: italic;
+  font-weight: normal;
   padding-left: 1em;
 }
-form.c1:-ms-input-placeholder,
-fieldset.c1:-ms-input-placeholder,
-form.c2 *.inv:-ms-input-placeholder {
-  color: #f5f9f9;
+form.c1 input:-ms-input-placeholder,
+fieldset.c1 input:-ms-input-placeholder,
+form.c2 *.inv input:-ms-input-placeholder {
+  color: #508a8b;
   font-size: 0.8em;
   font-style: italic;
+  font-weight: normal;
   padding-left: 1em;
 }
-form.c1::-webkit-input-placeholder,
-fieldset.c1::-webkit-input-placeholder,
-form.c2 *.inv::-webkit-input-placeholder {
-  color: #f5f9f9;
+form.c1 input::-webkit-input-placeholder,
+fieldset.c1 input::-webkit-input-placeholder,
+form.c2 *.inv input::-webkit-input-placeholder {
+  color: #508a8b;
   font-size: 0.8em;
   font-style: italic;
+  font-weight: normal;
   padding-left: 1em;
 }
 form.c1 ::selection,
@@ -580,6 +595,9 @@ form.c1 *.inv {
  @cbname: prefijo de color
  * */
   background-color: #f8eee0;
+  /*input.dest:focus{
+    font-weight: normal;
+}*/
 }
 form.c2 *,
 fieldset.c2 *,
@@ -671,28 +689,31 @@ fieldset.c2 fieldset.dest,
 form.c1 *.inv fieldset.dest {
   background-color: #f8eee0;
 }
-form.c2:-moz-placeholder,
-fieldset.c2:-moz-placeholder,
-form.c1 *.inv:-moz-placeholder {
-  color: #f8eee0;
+form.c2 input:-moz-placeholder,
+fieldset.c2 input:-moz-placeholder,
+form.c1 *.inv input:-moz-placeholder {
+  color: #b79565;
   font-size: 0.8em;
   font-style: italic;
+  font-weight: normal;
   padding-left: 1em;
 }
-form.c2:-ms-input-placeholder,
-fieldset.c2:-ms-input-placeholder,
-form.c1 *.inv:-ms-input-placeholder {
-  color: #f8eee0;
+form.c2 input:-ms-input-placeholder,
+fieldset.c2 input:-ms-input-placeholder,
+form.c1 *.inv input:-ms-input-placeholder {
+  color: #b79565;
   font-size: 0.8em;
   font-style: italic;
+  font-weight: normal;
   padding-left: 1em;
 }
-form.c2::-webkit-input-placeholder,
-fieldset.c2::-webkit-input-placeholder,
-form.c1 *.inv::-webkit-input-placeholder {
-  color: #f8eee0;
+form.c2 input::-webkit-input-placeholder,
+fieldset.c2 input::-webkit-input-placeholder,
+form.c1 *.inv input::-webkit-input-placeholder {
+  color: #b79565;
   font-size: 0.8em;
   font-style: italic;
+  font-weight: normal;
   padding-left: 1em;
 }
 form.c2 ::selection,
@@ -708,6 +729,13 @@ form.c1 *.inv ::-moz-selection {
   background: #f0daba;
 }
 /* Classes*/
+.dest {
+  font-size: 1.1em;
+  color: #188e90;
+}
+.chico {
+  font-size: 0.9em;
+}
 .round {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
