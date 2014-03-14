@@ -175,6 +175,20 @@
   background-color: #b1751e;
 }
 /* Sombras */
+.Sh24 {
+  -webkit-box-shadow: 1px 0.1em 2px -6px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 1px 0.1em 2px -6px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 0.1em 2px -6px rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 1px 0.1em 2px -6px rgba(0, 0, 0, 0.5);
+  -ms-box-shadow: 1px 0.1em 2px -6px rgba(0, 0, 0, 0.5);
+}
+.Sh23 {
+  -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
+}
 .Sh22 {
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
@@ -359,11 +373,11 @@ input,
 select,
 textarea,
 button {
-  -webkit-border-radius: 0.4em;
-  -moz-border-radius: 0.4em;
-  border-radius: 0.4em;
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  border-radius: 0.25em;
   height: 2em;
-  border: solid 1px;
+  border: solid 0.1em;
   margin: 0.5em;
   font-family: 'Lato', sans-serif;
 }
@@ -404,7 +418,6 @@ select:focus,
 textarea:focus {
   font-weight: bold;
   outline: none;
-  border: 1px solid;
 }
 input:invalid {
   text-decoration: line-through;
@@ -473,13 +486,23 @@ form.c2 *.inv select,
 form.c1 textarea,
 fieldset.c1 textarea,
 form.c2 *.inv textarea {
-  background-color: #c1e5e6;
-  border-color: #9ad9da;
+  background-color: #e2eeee;
+  border-color: #43c8cb;
+  -webkit-box-shadow: 0px 0px 1px 0px #89b5ab;
+  -moz-box-shadow: 0px 0px 1px 0px #89b5ab;
+  box-shadow: 0px 0px 1px 0px #89b5ab;
+  -o-box-shadow: 0px 0px 1px 0px #89b5ab;
+  -ms-box-shadow: 0px 0px 1px 0px #89b5ab;
 }
 form.c1 input:hover,
 fieldset.c1 input:hover,
 form.c2 *.inv input:hover {
-  background-color: #9ad9da;
+  background-color: #e2eeee;
+  -webkit-box-shadow: 0px 0px 0.35em 0px #14787a;
+  -moz-box-shadow: 0px 0px 0.35em 0px #14787a;
+  box-shadow: 0px 0px 0.35em 0px #14787a;
+  -o-box-shadow: 0px 0px 0.35em 0px #14787a;
+  -ms-box-shadow: 0px 0px 0.35em 0px #14787a;
   color: #14787a;
 }
 form.c1 input:focus,
@@ -492,8 +515,13 @@ form.c1 textarea:focus,
 fieldset.c1 textarea:focus,
 form.c2 *.inv textarea:focus {
   color: #126c6d;
-  background-color: #9ad9da;
-  border: 1px solid #14787a;
+  background-color: #e2eeee;
+  border: 0.1em solid #14787a;
+  -webkit-box-shadow: 0px 0px 0.4em 0px #14787a;
+  -moz-box-shadow: 0px 0px 0.4em 0px #14787a;
+  box-shadow: 0px 0px 0.4em 0px #14787a;
+  -o-box-shadow: 0px 0px 0.4em 0px #14787a;
+  -ms-box-shadow: 0px 0px 0.4em 0px #14787a;
 }
 form.c1 input[type$="submit"],
 fieldset.c1 input[type$="submit"],
@@ -613,13 +641,23 @@ form.c1 *.inv select,
 form.c2 textarea,
 fieldset.c2 textarea,
 form.c1 *.inv textarea {
-  background-color: #eac897;
-  border-color: #e6b773;
+  background-color: #f0daba;
+  border-color: #e4ac5b;
+  -webkit-box-shadow: 0px 0px 1px 0px #89b5ab;
+  -moz-box-shadow: 0px 0px 1px 0px #89b5ab;
+  box-shadow: 0px 0px 1px 0px #89b5ab;
+  -o-box-shadow: 0px 0px 1px 0px #89b5ab;
+  -ms-box-shadow: 0px 0px 1px 0px #89b5ab;
 }
 form.c2 input:hover,
 fieldset.c2 input:hover,
 form.c1 *.inv input:hover {
-  background-color: #e6b773;
+  background-color: #f0daba;
+  -webkit-box-shadow: 0px 0px 0.35em 0px #b1751e;
+  -moz-box-shadow: 0px 0px 0.35em 0px #b1751e;
+  box-shadow: 0px 0px 0.35em 0px #b1751e;
+  -o-box-shadow: 0px 0px 0.35em 0px #b1751e;
+  -ms-box-shadow: 0px 0px 0.35em 0px #b1751e;
   color: #b1751e;
 }
 form.c2 input:focus,
@@ -632,8 +670,13 @@ form.c2 textarea:focus,
 fieldset.c2 textarea:focus,
 form.c1 *.inv textarea:focus {
   color: #9c661a;
-  background-color: #e6b773;
-  border: 1px solid #b1751e;
+  background-color: #f0daba;
+  border: 0.1em solid #b1751e;
+  -webkit-box-shadow: 0px 0px 0.4em 0px #b1751e;
+  -moz-box-shadow: 0px 0px 0.4em 0px #b1751e;
+  box-shadow: 0px 0px 0.4em 0px #b1751e;
+  -o-box-shadow: 0px 0px 0.4em 0px #b1751e;
+  -ms-box-shadow: 0px 0px 0.4em 0px #b1751e;
 }
 form.c2 input[type$="submit"],
 fieldset.c2 input[type$="submit"],
