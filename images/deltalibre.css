@@ -838,13 +838,6 @@ form.c1 *.inv ::-moz-selection {
   -moz-border-radius: 50%;
   border-radius: 50%;
 }
-.cajauno {
-  background: #f5f9f9;
-  padding: 0px 2em 3em;
-  -webkit-border-radius: 1em;
-  -moz-border-radius: 1em;
-  border-radius: 1em;
-}
 .acentro {
   text-align: center;
 }
@@ -853,6 +846,87 @@ form.c1 *.inv ::-moz-selection {
 }
 .aizq {
   text-align: left;
+}
+/*Withs step 5%*/
+.w100 {
+  width: 100%;
+}
+.w95 {
+  width: 95%;
+}
+.w90 {
+  width: 90%;
+}
+.w85 {
+  width: 85%;
+}
+.w80 {
+  width: 80%;
+}
+.w75 {
+  width: 75%;
+}
+.w70 {
+  width: 70%;
+}
+.w65 {
+  width: 65%;
+}
+.w60 {
+  width: 60%;
+}
+.w55 {
+  width: 55%;
+}
+.w50 {
+  width: 50%;
+}
+.w45 {
+  width: 45%;
+}
+.w40 {
+  width: 40%;
+}
+.w35 {
+  width: 35%;
+}
+.w30 {
+  width: 30%;
+}
+.w25 {
+  width: 25%;
+}
+.w20 {
+  width: 20%;
+}
+.w15 {
+  width: 15%;
+}
+.w10 {
+  width: 10%;
+}
+.w5 {
+  width: 5%;
+}
+.inline {
+  display: inline;
+}
+.cajauno {
+  background: #f5f9f9;
+  padding: 0px 2em 3em;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  border-radius: 1em;
+}
+#logo-head-cont {
+  border: 1px red solid;
+  width: 30%;
+  display: inline;
+  float: left;
+  height: 3em;
+}
+#head-nav-cont {
+  width: 70%;
 }
 .logo-circ-cont {
   padding: 1em;
@@ -878,8 +952,7 @@ form.c1 *.inv ::-moz-selection {
   -o-transform: rotate(-8deg);
   transform: rotate(-8deg);
 }
-#logo-cont,
-.logo-circ-cont {
+[id^="logo-"] {
   z-index: 1000;
 }
 /*IDs*/
