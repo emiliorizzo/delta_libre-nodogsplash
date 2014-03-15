@@ -1,4 +1,4 @@
-@import "font.css";
+/* Preseteos de Vinetas */
 /* Colors class */
 .c1 {
   color: #188e90;
@@ -176,6 +176,13 @@
   background-color: #b1751e;
 }
 /* Sombras */
+.Sh25 {
+  -webkit-box-shadow: inset 2px 2px 30px 0px #f8eee0;
+  -moz-box-shadow: inset 2px 2px 30px 0px #f8eee0;
+  box-shadow: inset 2px 2px 30px 0px #f8eee0;
+  -o-box-shadow: inset 2px 2px 30px 0px #f8eee0;
+  -ms-box-shadow: inset 2px 2px 30px 0px #f8eee0;
+}
 .Sh24 {
   -webkit-box-shadow: 1px 0.1em 2px -6px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 1px 0.1em 2px -6px rgba(0, 0, 0, 0.5);
@@ -361,6 +368,68 @@ body ::selection {
 body ::-moz-selection {
   color: #188e90;
   background: #e2eeee;
+}
+/*IMAGENES*/
+figure figcaption {
+  font-size: 0.8em;
+  margin: 0 2em 0 2em;
+}
+.polaroid {
+  background-color: white;
+  border: solid 1px #ffffff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 0px 6px 0px #e7f0ee , 0px 0px 3px 1px #808080 , inset 2px 2px 30px 0px #f8eee0;
+  -moz-box-shadow: 0px 0px 6px 0px #e7f0ee , 0px 0px 3px 1px #808080 , inset 2px 2px 30px 0px #f8eee0;
+  box-shadow: 0px 0px 6px 0px #e7f0ee , 0px 0px 3px 1px #808080 , inset 2px 2px 30px 0px #f8eee0;
+  -o-box-shadow: 0px 0px 6px 0px #e7f0ee , 0px 0px 3px 1px #808080 , inset 2px 2px 30px 0px #f8eee0;
+  -ms-box-shadow: 0px 0px 6px 0px #e7f0ee , 0px 0px 3px 1px #808080 , inset 2px 2px 30px 0px #f8eee0;
+  padding-bottom: 2%;
+}
+.polaroid img {
+  position: relative;
+  z-index: 1;
+}
+.polaroid img:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  -webkit-box-shadow: inset 0px 0px 30em #000000;
+  -moz-box-shadow: inset 0px 0px 30em #000000;
+  box-shadow: inset 0px 0px 30em #000000;
+}
+.polaroid img {
+  max-width: 92%;
+  height: auto;
+  margin: 4% 4% 8% 4%;
+  /*Vignette para imagenes
+ @vig: preseteo de viñeta
+ * */
+  position: relative;
+}
+.polaroid img:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  -webkit-box-shadow: inset 0px 0px 30em #000000;
+  -moz-box-shadow: inset 0px 0px 30em #000000;
+  box-shadow: inset 0px 0px 30em #000000;
+}
+.polaroid img img {
+  display: block;
+}
+figure.polaroid figcaption {
+  padding: 1em;
+  margin-top: -8%;
 }
 /*FORMS*/
 form,
@@ -918,6 +987,12 @@ form.c1 *.inv ::-moz-selection {
   -moz-border-radius: 1em;
   border-radius: 1em;
 }
+#page-header {
+  width: 100%;
+  border: 3px solid blue;
+  display: block;
+  height: auto;
+}
 #logo-head-cont {
   border: 1px red solid;
   width: 30%;
@@ -953,7 +1028,7 @@ form.c1 *.inv ::-moz-selection {
   transform: rotate(-8deg);
 }
 [id^="logo-"] {
-  z-index: 1000;
+  z-index: 100;
 }
 /*IDs*/
 #logo-splash {
