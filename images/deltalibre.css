@@ -1,3 +1,4 @@
+@import "font.css";
 /* Colors class */
 .c1 {
   color: #188e90;
@@ -381,6 +382,9 @@ button {
   margin: 0.5em;
   font-family: 'Lato', sans-serif;
 }
+input[type="range"] {
+  height: 0.3em;
+}
 input[type="submit"],
 button {
   -webkit-border-radius: 0.5em;
@@ -457,6 +461,35 @@ input.dest {
   font-weight: normal;
   padding-left: 1em;
 }
+/*Uso :root para que solo funcione con navs que soportan css3*/
+:root input[type="checkbox"],
+:root input[type="radio"] {
+  visibility: hidden;
+  position: absolute;
+}
+:root input[type="checkbox"] + label:before,
+:root input[type="radio"] + label:before {
+  font-family: 'deltalibre';
+  font-size: 1.4em;
+  line-height: 1em;
+  cursor: pointer;
+  position: relative;
+}
+:root input[type="checkbox"] + label:before {
+  content: "\e60d";
+}
+:root input[type="checkbox"]:checked + label:before {
+  content: "\e60c";
+}
+:root input[type="checkbox"].tilde:checked + label:before {
+  content: "\e60b";
+}
+:root input[type="radio"] + label:before {
+  content: "\e601";
+}
+:root input[type="radio"]:checked + label:before {
+  content: "\e600";
+}
 /*FORMS - COLORS */
 form.c1,
 fieldset.c1,
@@ -493,14 +526,20 @@ form.c2 *.inv textarea {
 }
 form.c1 input:hover,
 fieldset.c1 input:hover,
-form.c2 *.inv input:hover {
+form.c2 *.inv input:hover,
+form.c1 select:hover,
+fieldset.c1 select:hover,
+form.c2 *.inv select:hover,
+form.c1 textarea:hover,
+fieldset.c1 textarea:hover,
+form.c2 *.inv textarea:hover {
+  color: #14787a;
   background-color: #e2eeee;
   -webkit-box-shadow: 0px 0px 0.35em 0px #14787a;
   -moz-box-shadow: 0px 0px 0.35em 0px #14787a;
   box-shadow: 0px 0px 0.35em 0px #14787a;
   -o-box-shadow: 0px 0px 0.35em 0px #14787a;
   -ms-box-shadow: 0px 0px 0.35em 0px #14787a;
-  color: #14787a;
 }
 form.c1 input:focus,
 fieldset.c1 input:focus,
@@ -512,13 +551,14 @@ form.c1 textarea:focus,
 fieldset.c1 textarea:focus,
 form.c2 *.inv textarea:focus {
   color: #126c6d;
-  background-color: #e2eeee;
+  background-color: #f5f9f9;
   border: 0.1em solid #14787a;
   -webkit-box-shadow: 0px 0px 0.4em 0px #14787a;
   -moz-box-shadow: 0px 0px 0.4em 0px #14787a;
   box-shadow: 0px 0px 0.4em 0px #14787a;
   -o-box-shadow: 0px 0px 0.4em 0px #14787a;
   -ms-box-shadow: 0px 0px 0.4em 0px #14787a;
+  text-decoration: none;
 }
 form.c1 input[type="submit"],
 fieldset.c1 input[type="submit"],
@@ -563,6 +603,11 @@ form.c2 *.inv button:hover {
   background: -moz-linear-gradient(center bottom, #14787a 0%, #1ca4a6 100%);
   background: -o-linear-gradient(#1ca4a6, #14787a);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1ca4a6', endColorstr='#14787a', GradientType=0);
+}
+form.c1 input[type="file"],
+fieldset.c1 input[type="file"],
+form.c2 *.inv input[type="file"] {
+  /*Falta implementar*/
 }
 form.c1 fieldset,
 fieldset.c1 fieldset,
@@ -648,14 +693,20 @@ form.c1 *.inv textarea {
 }
 form.c2 input:hover,
 fieldset.c2 input:hover,
-form.c1 *.inv input:hover {
+form.c1 *.inv input:hover,
+form.c2 select:hover,
+fieldset.c2 select:hover,
+form.c1 *.inv select:hover,
+form.c2 textarea:hover,
+fieldset.c2 textarea:hover,
+form.c1 *.inv textarea:hover {
+  color: #b1751e;
   background-color: #f0daba;
   -webkit-box-shadow: 0px 0px 0.35em 0px #b1751e;
   -moz-box-shadow: 0px 0px 0.35em 0px #b1751e;
   box-shadow: 0px 0px 0.35em 0px #b1751e;
   -o-box-shadow: 0px 0px 0.35em 0px #b1751e;
   -ms-box-shadow: 0px 0px 0.35em 0px #b1751e;
-  color: #b1751e;
 }
 form.c2 input:focus,
 fieldset.c2 input:focus,
@@ -667,13 +718,14 @@ form.c2 textarea:focus,
 fieldset.c2 textarea:focus,
 form.c1 *.inv textarea:focus {
   color: #9c661a;
-  background-color: #f0daba;
+  background-color: #f8eee0;
   border: 0.1em solid #b1751e;
   -webkit-box-shadow: 0px 0px 0.4em 0px #b1751e;
   -moz-box-shadow: 0px 0px 0.4em 0px #b1751e;
   box-shadow: 0px 0px 0.4em 0px #b1751e;
   -o-box-shadow: 0px 0px 0.4em 0px #b1751e;
   -ms-box-shadow: 0px 0px 0.4em 0px #b1751e;
+  text-decoration: none;
 }
 form.c2 input[type="submit"],
 fieldset.c2 input[type="submit"],
@@ -718,6 +770,11 @@ form.c1 *.inv button:hover {
   background: -moz-linear-gradient(center bottom, #c78321 0%, #df9c3d 100%);
   background: -o-linear-gradient(#df9c3d, #c78321);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#df9c3d', endColorstr='#c78321', GradientType=0);
+}
+form.c2 input[type="file"],
+fieldset.c2 input[type="file"],
+form.c1 *.inv input[type="file"] {
+  /*Falta implementar*/
 }
 form.c2 fieldset,
 fieldset.c2 fieldset,
