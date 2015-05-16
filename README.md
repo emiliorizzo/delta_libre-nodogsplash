@@ -1,4 +1,4 @@
-# DELTALIBRE LOGIN #
+﻿# DELTALIBRE LOGIN #
 
 Cosas a tener en cuenta:
 
@@ -9,9 +9,12 @@ http://wiki.openwrt.org/doc/howto/wireless.hotspot.nodogsplash
 
  * (habrá que modificar el "import"??)
 
-Los repos originales de los .css son estos
+Creo que los repos originales de los .css son estos
+y si no revisar branch 1.x: https://github.com/emiliorizzo/delta-libre-web-dg/tree/1.x
 
-* #[html.css](https://github.com/emiliorizzo/delta-libre-web-dg/blob/master/web/css/html.css)
-* #[deltalibre.css](https://github.com/emiliorizzo/delta-libre-web-dg/blob/master/web/css/deltalibre.css)
+
+* #[html.css](https://github.com/emiliorizzo/delta-libre-web-dg/blob/2.x/web/css/html.css)
+
+* #[deltalibre.css](https://github.com/emiliorizzo/delta-libre-web-dg/blob/2.x/web/css/deltalibre.css)
 
 *No hago un submódulo porque me parece ver la música, además no creo que los nodos soporten GIT ;)
